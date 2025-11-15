@@ -1,0 +1,39 @@
+{
+  "project": "Clinical Trial Patient Recruitment Optimization",
+  "timestamp": "2025-11-15T10:48:27.207281",
+  "dataset": {
+    "name": "Bells Palsy Clinical Trial Data",
+    "size": 494,
+    "features": 12,
+    "target_distribution": {
+      "not_recruited": 441,
+      "recruited": 53
+    }
+  },
+  "preprocessing": {
+    "categorical_encoding": "LabelEncoder",
+    "missing_value_handling": "Mean Imputation",
+    "scaling": "StandardScaler",
+    "class_imbalance_handling": "SMOTE",
+    "train_test_split": "80-20"
+  },
+  "best_model": "Logistic Regression",
+  "performance": {
+    "auc_roc": 1.0,
+    "f1_score": 1.0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "training_time_seconds": 2.2621967792510986
+  },
+  "cross_validation": {
+    "mean_auc": 1.0,
+    "std_auc": 0.0,
+    "mean_f1": 1.0
+  },
+  "efficiency": {
+    "avg_inference_time_ms": 0.14690637588500977,
+    "throughput_patients_per_second": 68070.56494149343,
+    "model_size_mb": 4.57763671875e-05
+  }
+}
